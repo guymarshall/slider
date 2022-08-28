@@ -5,14 +5,14 @@ output.innerHTML = slider.value;
 slider.oninput = function() {
     output.innerHTML = this.value;
     console.log(output.innerHTML);
-    document.getElementById("sliderValue").style.color = getRandomColor();
+    document.getElementById("sliderValue").style.color = getRandomColour();
 }
 
-function getRandomColor() {
+function getRandomColour() {
     let letters = '0123456789ABCDEF';
-    let color = '#';
+    let colour = '#';
     for (let i = 0; i < 6; i++) {
-        color += letters[Math.floor(Math.random() * 16)];
+        colour += letters[Math.floor(Math.random() * 16)];
     }
-    return color;
+    return colour;
 }
